@@ -33,3 +33,7 @@
 
 # Build output
 build/*
+
+# pycache stuff
+*/__pycache__/*
+__pycache__
