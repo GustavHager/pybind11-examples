@@ -8,3 +8,4 @@ add_subdirectory(dependencies/pybind11/)
 # found in the file functions.cpp
 # EXTREMELY IMPORTANT THAT THE MODULE NAMES MATCH IN BOTH PLACES
 pybind11_add_module(example_functions src/functions.cpp)
+pybind11_add_module(example_class src/classes.cpp)
