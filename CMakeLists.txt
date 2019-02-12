@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.0)
 project(pybind11_examples)
 
-add_subdirectory(deps/pybind11)
+# Add the submodule
+add_subdirectory(dependencies/pybind11)
 
 # Tell the pybind11 system to do its magic on the python module called "example_functions"
 # found in the file functions.cpp
