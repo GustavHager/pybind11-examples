@@ -14,7 +14,9 @@ before it can be compiled
 python3-dev
 cmake
 
+
 # Help, it does not work!
 * The module name must match in cmake and in the c++ file
+* you need to move or symlink the compiled .so files from the build directory to the python directory for python to find them correctly
 
 [1] https://github.com/pybind/pybind11
