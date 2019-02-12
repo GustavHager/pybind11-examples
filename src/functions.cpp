@@ -1,4 +1,4 @@
-#include <pybind11/pybind.h> // main pybind11 header
+#include <pybind11/pybind11.h> // main pybind11 header
 #include <pybind11/stl.h> // required for the magical conversion from python list to std::vector
 
 #include <vector>
@@ -10,7 +10,7 @@ float compute_mean(const std::vector<float>& values){
     float mean = 0;
     const size_t bigN = values.size();
 
-    std::for_each(values.begin(), vector.end(), [&] (int n){
+    std::for_each(values.begin(), values.end(), [&] (int n){
             mean += n / bigN;
     });
 
